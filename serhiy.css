@@ -174,3 +174,16 @@ input:checked+.slider .moon {
     justify-content: center;
     margin-top: 35px;
 }
+@media (max-width:730px) {
+    .ul-all-rahynok-computer-sec{
+       position: relative;
+       left: 20px;
+    }
+}
+@media (max-width:580px) {
+    .ul-all-rahynok-computer-sec{
+       position: relative;
+       left: -200px;
+       top: 160px;
+    }
+}
