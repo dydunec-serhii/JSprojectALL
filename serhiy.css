@@ -187,3 +187,35 @@ input:checked+.slider .moon {
        top: 160px;
     }
 }
+/* .a-colo{
+    color: black;
+
+}
+.li-logo-head2{
+    margin-left: 175px;
+}
+.ul-tel-email{
+    margin-left: 550px;
+    margin-top: -10px;
+} */
+.white-back{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+
+}
+.div-gogle-dino{
+    display: flex;
+    justify-content: center;
+    margin-right: 180px;
+    margin-top: 35px;
+}
+h2{
+    position: relative;
+    left: 460px;
+}
+.dino-gogle{
+    position: relative;
+    bottom: 115px;
+    left: 240px;
+}
