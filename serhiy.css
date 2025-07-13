@@ -219,3 +219,6 @@ h2{
     bottom: 115px;
     left: 240px;
 }
+.dino-box{
+        box-shadow: 0 0 0 3px lightblue;
+}
