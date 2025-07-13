@@ -1,3 +1,53 @@
-.p{
-    color: blue;
+.div-football {
+    position: relative;
+    width: 720px;
+    height: 220px;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 37px;
+    background: rgb(90, 187, 88);
+}
+
+.div-football-ball {
+    position: absolute;
+    /* margin-top: 85px;
+    margin-bottom: 85px;
+    margin-left: 93px;
+    margin-right: 557px; */
+}
+
+.intdiv {
+    display: flex;
+    gap: 41px;
+}
+
+.int {
+    border: none;
+    /* Frame 118 */
+    position: relative;
+    width: 135px;
+    height: 35px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(215, 215, 215);
+}
+
+.p2p {
+    position: absolute;
+    width: 252px;
+    height: 15px;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
 }
