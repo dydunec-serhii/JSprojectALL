@@ -230,7 +230,6 @@ h2 {
     bottom: 115px;
     left: 240px;
 }
-
 /* .sec-scroll{
     display: flex;
     justify-content: center;
@@ -321,4 +320,8 @@ h2 {
     100% {
         top: 150px;
     }
+}
+
+.dino-box{
+        box-shadow: 0 0 0 3px lightblue;
 }
