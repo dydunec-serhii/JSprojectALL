@@ -12,7 +12,7 @@
     max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
     margin-inline: auto;
     padding-inline: var(--container-padding-x);
-    
+
 }
 
 *,
@@ -77,7 +77,6 @@ p:where(:not([class]):not(:last-child)) {
 
 img,
 video {
-    
     max-width: 100%;
     height: auto;
 }
@@ -119,16 +118,15 @@ label {
     cursor: pointer;
 }
 
-/* :where([fill]:not([fill="none"],
+:where([fill]:not([fill="none"],
         [fill^="url"])) {
     fill: currentColor;
-} */
+}
 
-
-/* :where([stroke]:not([stroke="none"],
+:where([stroke]:not([stroke="none"],
         [stroke^="url"])) {
     stroke: currentColor;
-} */
+}
 
 
 svg * {
