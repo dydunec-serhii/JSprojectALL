@@ -144,49 +144,57 @@ input:checked+.slider .moon {
     justify-content: center;
     margin-top: 35px;
 }
-.ul-all-rahynok-computer-sec{
+
+.ul-all-rahynok-computer-sec {
     position: relative;
     left: 100px;
 }
+
 .bag-main {
     background-image: url(./big-img/big-img.png);
     background-repeat: no-repeat;
     height: 1700px;
 }
-.papir-nozi-div{
+
+.papir-nozi-div {
     display: flex;
     justify-content: center;
     column-gap: 40px;
     margin-top: 35px;
     margin-left: 110px;
 }
-.button-variant-pc-sec-main{
-  background-color: black;
-  border: none;
-  color: white;
-  width: 180px;
-  height: 35px;
-  font-size: 12px;
-  border-radius: 20px;
+
+.button-variant-pc-sec-main {
+    background-color: black;
+    border: none;
+    color: white;
+    width: 180px;
+    height: 35px;
+    font-size: 12px;
+    border-radius: 20px;
 }
-.but-varik{
+
+.but-varik {
     display: flex;
     justify-content: center;
     margin-top: 35px;
 }
+
 @media (max-width:730px) {
-    .ul-all-rahynok-computer-sec{
-       position: relative;
-       left: 20px;
+    .ul-all-rahynok-computer-sec {
+        position: relative;
+        left: 20px;
     }
 }
+
 @media (max-width:580px) {
-    .ul-all-rahynok-computer-sec{
-       position: relative;
-       left: -200px;
-       top: 160px;
+    .ul-all-rahynok-computer-sec {
+        position: relative;
+        left: -200px;
+        top: 160px;
     }
 }
+
 /* .a-colo{
     color: black;
 
@@ -198,24 +206,119 @@ input:checked+.slider .moon {
     margin-left: 550px;
     margin-top: -10px;
 } */
-.white-back{
+.white-back {
     display: flex;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
 
 }
-.div-gogle-dino{
+
+.div-gogle-dino {
     display: flex;
     justify-content: center;
     margin-right: 180px;
     margin-top: 35px;
 }
-h2{
+
+h2 {
     position: relative;
     left: 460px;
 }
-.dino-gogle{
+
+.dino-gogle {
     position: relative;
     bottom: 115px;
     left: 240px;
+}
+
+/* .sec-scroll{
+    display: flex;
+    justify-content: center;
+    
+} */
+.dis-ser {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img-foto-serhiy {
+    margin-left: 570px;
+    margin-top: 35px;
+}
+
+.bord {
+    height: 300px;
+    width: 700px;
+    border: 1px solid #000;
+    margin-left: 400px;
+    margin-top: 35px;
+}
+
+.game {
+    width: 700px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(./big-img/dino.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+    margin-left: 70px;
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(./big-img/kakrus.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    padding-left: 1px;
+    animation: cactusMov 1.3s infinite linear;
+}
+.p-dino{
+   display: flex;
+   justify-content: center;
+   margin-top: 35px;
+}
+@keyframes cactusMov {
+    0% {
+        left: 340px;
+    }
+
+    100% {
+        left: -340px;
+    }
+
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 130px;
+    }
+
+    50% {
+        top: 80px;
+    }
+
+    80% {
+        top: 130px;
+    }
+
+    100% {
+        top: 150px;
+    }
 }
