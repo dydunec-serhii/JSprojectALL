@@ -20,6 +20,7 @@ var isAlive = setInterval (function (){
     // }
 },10)
 
+
 // document.addEventListener('keydown', function (event) {
 //     const activeEl = document.activeElement;
 //     const isInput = activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA';
