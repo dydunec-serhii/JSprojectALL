@@ -18,6 +18,17 @@ divfootball.addEventListener('mouseover', (event) => {
         divfootballball.style.top = `${ballY}px`;
     });
 });
-divfootball.addEventListener('mouseout', (event) => {
+divfootball.addEventListener('mouseout', () => {
     divfootballball.removeEventListener('mousemove')
 });
+
+const p3n = document.querySelector('#p2p2p');
+const int1 = document.querySelector('#int1');
+const int2 = document.querySelector('#int2');
+const int3 = document.querySelector('#int3');
+if (int1.value !== '' || int2.value !== '' || int3.value !== '') {
+    let number = Math.max(Number(int1.value), Number(int2.value), Number(int3.value));
+    p3n.textContent = `Найбільше число, яке ви ввели - ${number}`;
+    p3n.body.appendChild(p3n);
+}
+    
