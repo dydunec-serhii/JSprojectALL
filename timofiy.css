@@ -51,3 +51,29 @@
     letter-spacing: 0%;
     text-align: left;
 }
+
+.fp1 {
+    position: absolute;
+    width: 74px;
+    height: 20px;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.t3np1 {
+    position: absolute;
+    width: 141px;
+    height: 20px;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
