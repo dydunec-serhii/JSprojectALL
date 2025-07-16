@@ -63,13 +63,16 @@ input:checked+.slider .sun {
 input:checked+.slider .moon {
     opacity: 1;
 }
+
 body {
     background-color: white;
     transition: all 0.3s ease;
-  }
-  body.dark-theme {
+}
+
+body.dark-theme {
     background-color: #2b2a2a;
-  }  
+}
+
 .logo-here-span {
     margin-left: 50px;
     margin-top: -40px;
@@ -154,6 +157,12 @@ body {
 .ul-all-rahynok-computer-sec {
     position: relative;
     left: 100px;
+}
+
+.all-center-mar {
+    position: relative;
+    left: 630px;
+    font-size: 20px;
 }
 
 .bag-main {
