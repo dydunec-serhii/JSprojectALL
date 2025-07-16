@@ -40,6 +40,7 @@ if (localStorage.getItem('theme') === 'dark') {
   toggleTheme.checked = true;
 }
 
+
 toggleTheme.addEventListener('change', function () {
   if (this.checked) {
     body.classList.add('dark-theme');
