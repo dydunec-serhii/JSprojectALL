@@ -8,7 +8,7 @@
 }
 
 .container {
-    outline: red 2px solid;
+    /* outline: red 2px solid; */
     max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
     margin-inline: auto;
     padding-inline: var(--container-padding-x);
