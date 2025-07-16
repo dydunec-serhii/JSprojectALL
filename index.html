@@ -70,17 +70,18 @@
             <section>
                 <p class="p-ul-sec-kamin-nozi-papir">Камінь - ножиці - папір</p>
                 <div class="papir-nozi-div">
-                    <img src="./svg-serhiy/kamin.svg" alt="kamin">
-                    <img src="./svg-serhiy/nozi.svg" alt="nozi">
-                    <img src="./svg-serhiy/papir.svg" alt="papir">
+                    <img class="choise" src="./svg-serhiy/kamin.svg" alt="kamin" data-choice="rock">
+                    <img class="choise" src="./svg-serhiy/nozi.svg" alt="nozi" data-choice="scissors">
+                    <img class="choise" src="./svg-serhiy/papir.svg" alt="papir" data-choice="paper">
                     <ul class="ul-all-rahynok-computer-sec">
                         <li>Рахунок:</li>
-                        <li>Комп’ютер</li>
-                        <li>Ви</li>
+                        <li id="compScore">Комп’ютер - 0</li>
+                        <li id="userScore"> Ви - 0</li>
                     </ul>
                 </div>
+                <p id="result" class="monster1"></p>
                 <div class="but-varik">
-                    <button class="button-variant-pc-sec-main monster" type="submit">Варіант комп’ютера</button>
+                    <button class="button-variant-pc-sec-main monster" id="resetBtn" type="submit">Скинути гру</button>
                 </div>
             </section>
             <section>
