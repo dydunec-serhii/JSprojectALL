@@ -77,3 +77,14 @@
     letter-spacing: 0%;
     text-align: left;
 }
+.football-sec-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.int-sec-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
