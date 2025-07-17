@@ -317,7 +317,18 @@ body.dark-theme {
 .close:hover {
     color: black;
 }
-
+.modal2 {
+    /* стилізація твого модального вікна */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px gray;
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
 .a-colo {
     color: black;
 

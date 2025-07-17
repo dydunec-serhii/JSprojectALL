@@ -182,4 +182,19 @@ window.addEventListener('click', (event) => {
     modal.style.display = 'none';
   }
 });
+const saveBtn = document.getElementById("saveBtn");
+const usernameInput = document.getElementById("username");
+const welcomeModal = document.getElementById("welcomeModal");
+const thankYouModal = document.getElementById("thankYouModal");
+
+saveBtn.addEventListener("click", () => {
+  const name = usernameInput.value.trim();
+  
+  if (name !== "") {
+    welcomeModal.classList.add("hidden");
+    thankYouModal.classList.remove("hidden");
+  } else {
+    alert("Будь ласка, введіть ім’я!");
+  }
+});
 
