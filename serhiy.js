@@ -92,61 +92,6 @@ leftArrow.addEventListener('click', () => {
 });
 updateSlide();
 
-
-// const compScoreElem = document.getElementById('compScore');
-// const userScoreElem = document.getElementById('userScore');
-// const choices = document.querySelectorAll('.choise');
-// const resultText = document.getElementById('result');
-// const resetBtn = document.getElementById('resetBtn');
-// let userScore = 0;
-// let compScore = 0;
-// choices.forEach(choice => {
-//     choice.addEventListener('click', () => {
-//         const userChoice = choice.dataset.choice;
-//         const compChoise = getComputerChoice();
-//         const result = determineWinner(userChoice, compCohoise);
-
-//         if (result === 'win') {
-//             userScore++;
-//             resultText.textContent = '🎉 Ви виграли раунд!';
-//             result.style.color = 'green';
-//         } else if (result === 'lose') {
-//             compScore++;
-//             resultText.textContent = '💀 Ви програли раунд!';
-//             resultText.style.color = 'red';
-//         } else {
-//             resultText.textContent = '🤝 Нічия!';
-//             resultText.style.color = 'gray';
-//         }
-//         userScoreElem.textContent = `Ви - ${userScore}`;
-//         compScoreElem.textContent = `Ви - ${compScore}`;
-//     })
-// })
-// resetBtn.addEventListener('click', () => {
-//     userScore = 0;
-//     compScore = 0;
-//     userScoreElem.textContent = `Ви - 0`;
-//     compScoreElem.textContent = `Комп’ютер - 0`;
-//     resultText.textContent = '';
-// });
-// function getCOmputerChoise() {
-//     const options = ['rock', 'paper', 'scissors'];
-//     const rand = Math.floor(Math.random() * options.length);
-//     return options[rand];
-// }
-// function determineWinner(user, comp) {
-//     if (user === comp) return 'draw';
-//     if (
-//         (user === 'rock' && comp === 'scissors') ||
-//         (user === 'scissors' && comp === 'paper') ||
-//         (user === 'paper' && comp === 'rock')
-//     ) {
-//         return 'win';
-//     } else {
-//         return 'lose';
-//     }
-// }
-
 const compScoreElem = document.getElementById('compScore');
 const userScoreElem = document.getElementById('userScore');
 const choices = document.querySelectorAll('.choise');
@@ -210,4 +155,31 @@ function determineWinner(user, comp) {
     }
 }
 
+
+// const buutFoot = document.getElementById('buut-foot');
+// buutFoot.addEventListener(('click'), () => {
+//     buutFoot.classList.add('buut-window-foot');
+//     buutFoot.textContent = 'dfghjk,mnbvfd';
+//     textContent.style.color = 'black'
+// })
+const openModalBtn = document.getElementById('openModalBtn');
+const modal = document.getElementById('modal');
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+// Відкрити модальне вікно
+openModalBtn.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+// Закрити вікно при натисканні на хрестик
+closeModalBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+// Закрити вікно при кліку поза вікном
+window.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
 
