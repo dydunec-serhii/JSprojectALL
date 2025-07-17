@@ -64,6 +64,15 @@ input:checked+.slider .moon {
     opacity: 1;
 }
 
+body {
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+body.dark-theme {
+    background-color: #2b2a2a;
+}
+
 .logo-here-span {
     margin-left: 50px;
     margin-top: -40px;
@@ -144,81 +153,322 @@ input:checked+.slider .moon {
     justify-content: center;
     margin-top: 35px;
 }
-.ul-all-rahynok-computer-sec{
+
+.ul-all-rahynok-computer-sec {
     position: relative;
     left: 100px;
 }
+
+.all-center-mar {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
 .bag-main {
     background-image: url(./big-img/big-img.png);
     background-repeat: no-repeat;
     height: 1700px;
 }
-.papir-nozi-div{
+
+.papir-nozi-div {
     display: flex;
     justify-content: center;
     column-gap: 40px;
     margin-top: 35px;
     margin-left: 110px;
 }
-.button-variant-pc-sec-main{
-  background-color: black;
-  border: none;
-  color: white;
-  width: 180px;
-  height: 35px;
-  font-size: 12px;
-  border-radius: 20px;
+
+.button-variant-pc-sec-main {
+    background-color: black;
+    border: none;
+    color: white;
+    width: 180px;
+    height: 35px;
+    font-size: 12px;
+    border-radius: 20px;
 }
-.but-varik{
+
+.but-varik {
     display: flex;
     justify-content: center;
     margin-top: 35px;
 }
+
 @media (max-width:730px) {
-    .ul-all-rahynok-computer-sec{
-       position: relative;
-       left: 20px;
+    .ul-all-rahynok-computer-sec {
+        position: relative;
+        left: 20px;
     }
 }
+
 @media (max-width:580px) {
-    .ul-all-rahynok-computer-sec{
-       position: relative;
-       left: -200px;
-       top: 160px;
+    .ul-all-rahynok-computer-sec {
+        position: relative;
+        left: -200px;
+        top: 160px;
     }
 }
-/* .a-colo{
+
+.disp-div-foot {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+    align-items: center;
+    margin-top: -60px;
+    column-gap: 50px;
+}
+
+.butt-foot {
+    width: 100px;
+    height: 35px;
+    border: none;
+    background-color: #000;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.input-foot-gmail {
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: #D7D7D7;
+    color: #7E7E7E;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.p-foot {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+.buut-window-foot {
+    width: 575px;
+    height: 315px;
+    background-color: #cbbfbf;
+    border-radius: 20px;
+    position: relative;
+    right: 500px;
+    bottom: 500px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 500px;
+    top: 100px;
+    width: 570px;
+    height: 315px;
+    background-color: rgb(127, 127, 127)
+}
+
+.modal-content {
+    position: relative;
+    bottom: 78px;
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 550px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.first-img-foot {
+    position: relative;
+    right: 20px;
+}
+
+.sec-img-foot {
+    position: relative;
+    top: 45px;
+    right: 10px;
+}
+
+.third-img-foot {
+    position: relative;
+    left: 50px;
+}
+
+.fourth-img-foot {
+    position: relative;
+    top: 45px;
+    right: 22px
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+.a-colo {
     color: black;
 
 }
-.li-logo-head2{
-    margin-left: 175px;
-}
-.ul-tel-email{
-    margin-left: 550px;
-    margin-top: -10px;
-} */
-.white-back{
-    display: flex;
-    justify-content: center;
-    align-items:center ;
+
+.li-logo-head2 {
+    position: relative;
+    left: 175px;
+    top: 70px;
 
 }
-.div-gogle-dino{
+
+.div-foot {
+    width: 1100px;
+    height: 50px;
+}
+
+.ul-tel-email {
+    margin-left: 550px;
+    margin-top: -15px;
+}
+
+.white-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div-gogle-dino {
     display: flex;
     justify-content: center;
     margin-right: 180px;
     margin-top: 35px;
 }
-h2{
+
+h2 {
     position: relative;
     left: 460px;
 }
-.dino-gogle{
+
+.dino-gogle {
     position: relative;
     bottom: 115px;
     left: 240px;
 }
-.dino-box{
-        box-shadow: 0 0 0 3px lightblue;
+
+/* .sec-scroll{
+    display: flex;
+    justify-content: center;
+    
+} */
+.dis-ser {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img-foto-serhiy {
+    margin-left: 520px;
+    margin-top: 35px;
+}
+
+.left-strilka {
+    position: relative;
+    left: 60px;
+}
+
+.right-strilka {
+    position: relative;
+    left: 350px;
+}
+
+.bord {
+    height: 300px;
+    width: 700px;
+    border: 1px solid #000;
+    margin-left: 400px;
+    margin-top: 35px;
+}
+
+.game {
+    width: 700px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(./big-img/dino.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+    margin-left: 70px;
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(./big-img/cactus.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    padding-left: 1px;
+    animation: cactusMov 3s infinite linear;
+}
+
+.p-dino {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+@keyframes cactusMov {
+    0% {
+        left: 340px;
+    }
+
+    100% {
+        left: -340px;
+    }
+
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 130px;
+    }
+
+    50% {
+        top: 80px;
+    }
+
+    80% {
+        top: 130px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
+.dino-box {
+    box-shadow: 0 0 0 3px lightblue;
 }

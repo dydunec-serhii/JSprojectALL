@@ -70,27 +70,33 @@
             <section>
                 <p class="p-ul-sec-kamin-nozi-papir">Камінь - ножиці - папір</p>
                 <div class="papir-nozi-div">
-                    <img src="./svg-serhiy/kamin.svg" alt="kamin">
-                    <img src="./svg-serhiy/nozi.svg" alt="nozi">
-                    <img src="./svg-serhiy/papir.svg" alt="papir">
+                    <img class="choise" src="./svg-serhiy/kamin.svg" alt="kamin" data-choice="rock">
+                    <img class="choise" src="./svg-serhiy/nozi.svg" alt="nozi" data-choice="scissors">
+                    <img class="choise" src="./svg-serhiy/papir.svg" alt="papir" data-choice="paper">
                     <ul class="ul-all-rahynok-computer-sec">
                         <li>Рахунок:</li>
-                        <li>Комп’ютер</li>
-                        <li>Ви</li>
+                        <li id="compScore">Комп’ютер - 0</li>
+                        <li id="userScore"> Ви - 0</li>
                     </ul>
                 </div>
+                <p id="result" class="monster1"></p>
                 <div class="but-varik">
-                    <button class="button-variant-pc-sec-main monster" type="submit">Варіант комп’ютера</button>
+                    <button class="button-variant-pc-sec-main monster" id="resetBtn" type="submit">Скинути гру</button>
                 </div>
             </section>
-            <section class="dino-sec-main">
-                <h2 class="gogle-dinozaur"></h2>
-                <div class="dino-container">
-                    <div class="dino" id="dino"></div>
-                    <div class="ground"></div>
+    
+            <!-- <section>
+                <div>
+                    <p class="dis-ser">Наша команда</p>
+                    <img class="left-strilka" src="./svg-serhiy/left-strilka.svg" alt="left" id="leftArrow">
+                    <img class="img-foto-serhiy" src="./big-img/serhiy.jpg" alt="serhiy" width="300px" height="300px">
+                    <img class="right-strilka" src="./svg-serhiy/right-strilka.svg" alt="right" id="rightArrow">
+                    <p class="dis-ser name-student">Ім’я студента</p>
+                    <p class="dis-ser information">Інформація про роботу, яку він/вона виконав/ла</p>
                 </div>
-            </section>
+            </section> -->
             <section>
+
                 <div class="div-gogle-dino">
                     <h2>Google динозавр</h2>
                     <div class="dino-box">
@@ -102,6 +108,20 @@
                 </div>
             </section>
             <section class="football-sec-main">
+
+                <div>
+                    <p class="dis-ser">Наша команда</p>
+                    <img class="left-strilka" src="./svg-serhiy/left-strilka.svg" alt="left" id="leftArrow">
+                    <img class="img-foto-serhiy" src="./big-img/serhiy.jpg" alt="serhiy" width="300px" height="300px"
+                        id="photo">
+                    <img class="right-strilka" src="./svg-serhiy/right-strilka.svg" alt="right" id="rightArrow">
+                    <p class="dis-ser name-student" id="studentName">Ім’я студента</p>
+                    <p class="dis-ser information" id="studentInfo">Інформація про роботу</p>
+                </div>
+            </section>
+            </section>
+            <section>
+
                 <hr>
                 <p class="fp1">Футбол</p>
                 <br>
@@ -130,7 +150,7 @@
             
         </main>
 
-        <!-- <footer>
+        <footer>
             <section>
                 <div>
                     <div class="li-logo-head2">
@@ -145,8 +165,37 @@
                         <li><a class="a-colo" href="#">Instagram: CodingMagic</a></li>
                     </ul>
                 </div>
+                <div class="disp-div-foot">
+                    <!-- <label for="gmail" name="gmail"></label> -->
+                    <input type="text" placeholder="Ваша ел. адреса..." class="input-foot-gmail">
+                    <button class="butt-foot" id="openModalBtn" type="button">Підписатись</button>
+                    <div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span id="closeModalBtn" class="close">&times;</span>
+                                <p>Привіт! <br>
+                                    Ви потрапили на сайт інтерактивних ігор та завдань <br>
+                                    Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br>
+                                    Бажаємо Вам гарно провести час!</p>
+                                <p>Введіть своє ім’я:</p>
+                                <img class="first-img-foot" src="./foot-ser-png/first.png" alt="first" width="30px"
+                                    height="30px">
+                                <img class="sec-img-foot" src="./foot-ser-png/second.png" alt="sec" width="30px"
+                                    height="30px">
+                                <input type="text" name="name" id="name-window" placeholder="Ваше ім’я..."
+                                    class="input-foot-gmail">
+                                <button class="butt-foot">Зберегти</button>
+                                <img class="third-img-foot" src="./foot-ser-png/third.png" alt="third" width="30px" height="30px">
+                                <img class="fourth-img-foot" src="./foot-ser-png/fourth.png" alt="fourth" width="30px" height="30px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="p-foot">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на <br>сайті</p>
             </section>
-        </footer> -->
+            <div class="div-foot"></div>
+        </footer>
         <script src="tymofiy.js"></script>
         <script src="serhiy.js"></script>
 </body>
