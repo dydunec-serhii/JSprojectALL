@@ -18,6 +18,27 @@ divfootball.addEventListener('mouseover', (event) => {
         divfootballball.style.top = `${ballY}px`;
     });
 });
-divfootball.addEventListener('mouseout', (event) => {
+divfootball.addEventListener('mouseout', () => {
     divfootballball.removeEventListener('mousemove')
+});
+
+const p3n = document.querySelector('#p2p2p');
+const int1 = document.querySelector('#int1');
+const int2 = document.querySelector('#int2');
+const int3 = document.querySelector('#int3');
+
+function updateMaxNumber() {
+    const values = [int1.value, int2.value, int3.value]
+        .map(v => Number(v))
+        .filter(v => !isNaN(v));
+    if (values.length > 0) {
+        const max = Math.max(...values);
+        p3n.textContent = `Найбільше число, яке ви ввели - ${max}`;
+    } else {
+        p3n.textContent = '';
+    }
+}
+
+[int1, int2, int3].forEach(input => {
+    input.addEventListener('input', updateMaxNumber);
 });
