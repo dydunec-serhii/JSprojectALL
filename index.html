@@ -66,7 +66,42 @@
         </header>
 
         <main class="bag-main">
-
+            <section>
+                <div class="dd">
+                    <p class="popular-games-title">Популярні інетрактивні ігри</p>
+                </div>
+                <hr>
+                <div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <p class="pp">Перевір в який рік ти народився</p>
+                    </div>
+                    <div class="dft">
+                        <div class="form-time">
+                            <input class="old-class" id="iddd" type="text" placeholder="Введіть рік народження">
+                            <button type="submit" class="new-e2"><img src="svg-timofiy/rename.svg"
+                                    alt="rename.svg"></button>
+                        </div>
+                        <p class="pp2" id="yu"></p>
+                    </div>
+                </div>
+                <hr class="qwqw">
+                <div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <p class="ppp">Вгадай число, яке загадав комп’ютер</p>
+                    </div>
+                    <div>
+                        <div class="form-time">
+                            <input id="bmwx5" class="old-class2" type="text" placeholder="Введіть число">
+                            <button id="guessButton" type="submit" class="new-ee"><img src="svg-timofiy/rename.svg"
+                                    alt="rename.svg"></button>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <p class="pp3" id="ropopo"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
             <section>
                 <p class="p-ul-sec-kamin-nozi-papir">Камінь - ножиці - папір</p>
                 <div class="papir-nozi-div">
@@ -79,12 +114,47 @@
                         <li id="userScore"> Ви - 0</li>
                     </ul>
                 </div>
-                <p id="result" class="monster1"></p>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <p id="result" class="monster1"></p>
+                </div>
+
                 <div class="but-varik">
                     <button class="button-variant-pc-sec-main monster" id="resetBtn" type="submit">Скинути гру</button>
                 </div>
             </section>
-
+            <hr>
+            <section>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <p class="hrhr">Калькулятор</p>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center; gap: 40px;">
+                    <input class="ini" type="text" placeholder="Введіть число" id="num1">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <button class="btns" onclick="calculate('+')">+</button>
+                        <button class="btns" onclick="calculate('-')">−</button>
+                        <button class="btns" onclick="calculate('*')">*</button>
+                        <button class="btns" onclick="calculate('/')">/</button>
+                    </div>
+                    <input class="ini" type="text" placeholder="Введіть число" id="num2">
+                    <button class="btns1" id="calcBtn" onclick="calculate('=')">=</button>
+                    <span class="resspan" id="calcresult">Результат</span>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <div class="div-time-sec">
+                    <p class="form-time-text2">Калькулятор часу</p>
+                </div>
+                <div class="div-time">
+                    <div class="form-time">
+                        <input class="new-class" type="text" placeholder="Введіть число">
+                        <button type="submit" class="new-e"><img src="svg-timofiy/rename.svg" alt="rename.svg"></button>
+                    </div>
+                    <div class="dff"></div>
+                    <p class="form-time-text">3 дн. 15:45:01</p>
+                </div>
+            </section>
+            <hr>
             <section>
 
                 <!-- <div class="div-gogle-dino">
@@ -104,18 +174,31 @@
                     </div>
                 </div>
             </section>
-                <div>
-                    <p class="dis-ser">Наша команда</p>
+            <hr>
+            <div>
+                <div style="display: flex; justify-content: center; align-items: center; margin-top: 50px;">
+                    <p class="dis-ser1">Наша команда</p>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center;">
                     <img class="left-strilka" src="./svg-serhiy/left-strilka.svg" alt="left" id="leftArrow">
-                    <img class="img-foto-serhiy" src="./big-img/serhiy.jpg" alt="serhiy" width="300px" height="300px"
-                        id="photo">
+                    <div
+                        style="display: flex; align-items: center; justify-content: center; width: 200px; height: 250px; overflow: hidden; border-radius: 20px;">
+                        <img class="img-foto-serhiy" src="./big-img/serhiy.jpg" alt="serhiy" width="300px"
+                            height="300px" id="photo">
+                    </div>
                     <img class="right-strilka" src="./svg-serhiy/right-strilka.svg" alt="right" id="rightArrow">
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center;">
                     <p class="dis-ser name-student" id="studentName">Ім’я студента</p>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 50px;">
                     <p class="dis-ser information" id="studentInfo">Інформація про роботу</p>
                 </div>
+            </div>
             </section>
             </section>
-            <section>
+            <hr>
+            <section class="football-sec">
 
                 <hr>
                 <p class="fp1">Футбол</p>
@@ -125,8 +208,8 @@
                         <img src="./svg-timofiy/footballball.svg" alt="football">
                     </div>
                 </div>
-                <hr>
             </section>
+            <hr>
             <section>
                 <div class="int-sec-main">
                     <p class="t3np1">Введіть 3 числа</p>
@@ -142,12 +225,49 @@
                     <p class="p2p" id="p2p2p">Найбільше число, яке ви ввели - (число)</p>
                 </div>
                 <br>
-                <hr>
             </section>
-
+            <hr>
+            <section>
+                <!-- Додайте цю секцію у потрібне місце в index.html -->
+                <section class="scientist-section">
+                    <div class="scientist-title">Обери вченого/их</div>
+                    <div class="scientist-grid">
+                        <div class="scientist-card"></div>
+                        <div class="scientist-card"></div>
+                        <div class="scientist-card"></div>
+                        <div class="scientist-card"></div>
+                        <div class="scientist-card"></div>
+                        <div class="scientist-card"></div>
+                        <div class="scientist-card"></div>
+                        <div class="scientist-card"></div>
+                        <div class="scientist-card"></div>
+                        <div class="scientist-card"></div>
+                        <div class="scientist-card"></div>
+                        <div class="scientist-card"></div>
+                    </div>
+                    <div class="scientist-labels">
+                        <div class="scientist-label-col">
+                            <div class="scientist-label">Які вчені народилися в 19 ст.</div>
+                            <div class="scientist-label">Відсортувати вчених за алфавітом</div>
+                            <div class="scientist-label">Відсортувати вчених за кількістю прожитих років</div>
+                            <div class="scientist-label">Знайти вченого, який народився найпізніше</div>
+                            <div class="scientist-label">1. Знайти вчених, в яких співпадають перші літери імені і
+                                прізвища</div>
+                        </div>
+                        <div class="scientist-label-col">
+                            <div class="scientist-label">Знайти рік народження Albert Einstein</div>
+                            <div class="scientist-label">Знайти вчених, прізвища яких починаються на літеру "С"</div>
+                            <div class="scientist-label">Видалити всіх вчених, ім'я яких починається на "А"</div>
+                            <div class="scientist-label">Знайти вченого, який прожив найдовше і вченого, який прожив
+                                найменше</div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <hr>
         </main>
 
-        <footer>
+        <footer style="margin-top: 1000px;">
             <section>
                 <div>
                     <div class="li-logo-head2">

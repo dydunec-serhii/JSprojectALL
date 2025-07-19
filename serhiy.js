@@ -58,7 +58,7 @@ const photos = [
     {
         src: './big-img/timafiy.jpg',
         name: 'Тимофій Снісар',
-        info: 'Реалізував гру "Футбол" та інтерактивне меню'
+        info: 'Реалізував такы ыгри як: "Футбол", "вгадай число", "інтерактивне меню" та доробив майже усі секції на сайті за один день'
     },
     {
         src: './big-img/chatGpt.png',
@@ -106,20 +106,46 @@ choices.forEach(choice => {
         const userChoice = choice.dataset.choice;
         const compChoice = getComputerChoice();
         const result = determineWinner(userChoice, compChoice);
-
         if (result === 'win') {
             userScore++;
-            resultText.textContent = '🎉 Ви виграли раунд!';
-            resultText.style.color = 'green';
+            resultText.textContent = 'Ви виграли раунд!';
+            resultText.style.color = 'rgb(3, 153, 0)';
+            resultText.style.fontFamily = 'Montserrat Alternates';
+            resultText.style.fontSize = '12px';
+            resultText.style.fontWeight = '400';
+            resultText.style.lineHeight = '15px';
+            resultText.style.letterSpacing = '0%';
+            resultText.style.textAlign = 'right';
+            resultText.style.position = 'relative';
+            resultText.style.width = '275px';
+            resultText.style.height = '15px';
             resultText.classList.add('all-center-mar');
         } else if (result === 'lose') {
             compScore++;
-            resultText.textContent = '💀 Ви програли раунд!';
-            resultText.style.color = 'red';
+            resultText.textContent = 'Комп’ютер виграв раунд!';
+            resultText.style.fontFamily = 'Montserrat Alternates';
+            resultText.style.fontSize = '12px';
+            resultText.style.fontWeight = '400';
+            resultText.style.lineHeight = '15px';
+            resultText.style.letterSpacing = '0%';
+            resultText.style.textAlign = 'right';
+            resultText.style.position = 'relative';
+            resultText.style.width = '275px';
+            resultText.style.height = '15px';
+            resultText.style.color = 'rgb(153, 0, 0)';
             resultText.classList.add('all-center-mar');
         } else {
-            resultText.textContent = '🤝 Нічия!';
+            resultText.textContent = 'Нічия!';
             resultText.style.color = 'gray';
+            resultText.style.fontFamily = 'Montserrat Alternates';
+            resultText.style.fontSize = '12px';
+            resultText.style.fontWeight = '400';
+            resultText.style.lineHeight = '15px';
+            resultText.style.letterSpacing = '0%';
+            resultText.style.textAlign = 'right';
+            resultText.style.position = 'relative';
+            resultText.style.width = '275px';
+            resultText.style.height = '15px';
             resultText.classList.add('all-center-mar');
         }
 
@@ -133,6 +159,36 @@ resetBtn.addEventListener('click', () => {
     compScore = 0;
     userScoreElem.textContent = `Ви - 0`;
     compScoreElem.textContent = `Комп’ютер - 0`;
+    userScoreElem.style.color = 'black';
+    compScoreElem.style.color = 'black';
+    resultText.style.color = 'black';
+    resultText.style.fontFamily = 'Montserrat Alternates';
+    resultText.style.fontSize = '12px';
+    resultText.style.fontWeight = '400';
+    resultText.style.lineHeight = '15px';
+    resultText.style.letterSpacing = '0%';
+    resultText.style.textAlign = 'left';
+    resultText.style.position = 'relative';
+    resultText.style.width = '169px';
+    resultText.style.height = '15px';
+    compScoreElem.style.fontFamily = 'Montserrat Alternates';
+    userScoreElem.style.fontFamily = 'Montserrat Alternates';
+    compScoreElem.style.fontSize = '12px';
+    userScoreElem.style.fontSize = '12px';
+    compScoreElem.style.fontWeight = '400';
+    userScoreElem.style.fontWeight = '400';
+    compScoreElem.style.lineHeight = '15px';
+    userScoreElem.style.lineHeight = '15px';
+    compScoreElem.style.letterSpacing = '0%';
+    userScoreElem.style.letterSpacing = '0%';
+    compScoreElem.style.textAlign = 'left';
+    userScoreElem.style.textAlign = 'left';
+    compScoreElem.style.position = 'relative';
+    userScoreElem.style.position = 'relative';
+    compScoreElem.style.width = '169px';
+    userScoreElem.style.width = '169px';
+    compScoreElem.style.height = '15px';
+    userScoreElem.style.height = '15px';
     resultText.textContent = '';
 });
 

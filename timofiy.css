@@ -78,7 +78,7 @@
     text-align: left;
 }
 
-.football-sec-main {
+.football-sec {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,6 +92,490 @@
 
 .p2p-div {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+}
+
+.new-class {
+    border: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 117px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 10px 45px 10px 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: rgb(215, 215, 215);
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.new-e {
+    border: none;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    /* Автолейаут */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px;
+    background: rgb(0, 0, 0);
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.form-time {
+    display: flex;
+    margin-left: 392px;
+    width: 100%;
+}
+
+.dff {
+    position: absolute;
+    width: 100px;
+    height: 0;
+    border: 1px dashed rgb(0, 0, 0);
+}
+
+.div-time {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+
+.form-time-text {
+    position: absolute;
+    width: 76px;
+    height: 15px;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 340px;
+}
+
+.div-time-sec {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-time-text2 {
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    position: absolute;
+    width: 163px;
+    height: 20px;
+}
+
+.popular-games-title {
+    position: relative;
+    width: 386px;
+    height: 29px;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat Alternates";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.dd {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pp {
+    position: relative;
+    width: 283px;
+    height: 20px;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.old-class {
+    border: none;
+    position: relative;
+    width: 215px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 10px 45px 10px 10px;
+    border-radius: 20px 0px 0px 20px;
+    background: rgb(215, 215, 215);
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.old-class2 {
+    border: none;
+    position: relative;
+    width: 150px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 10px 45px 10px 10px;
+    border-radius: 20px 0px 0px 20px;
+    background: rgb(215, 215, 215);
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.new-ee {
+    border: none;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px;
+    background: rgb(0, 0, 0);
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.new-e2 {
+    border: none;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px;
+    background: rgb(0, 0, 0);
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.dft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ppp {
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    position: relative;
+    width: 327px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.old-class2::placeholder {
+    position: static;
+    width: 95px;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 10px 45px 10px 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    color: rgb(126, 126, 126);
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.old-class::placeholder {
+    position: static;
+    width: 160px;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 10px 45px 10px 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    color: rgb(126, 126, 126);
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.int::placeholder {
+    position: static;
+    width: 95px;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    color: rgb(126, 126, 126);
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.new-class::placeholder {
+    position: static;
+    width: 95px;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 10px 45px 10px 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    color: rgb(126, 126, 126);
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.ini {
+    border: none;
+    position: relative;
+    width: 135px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(215, 215, 215);
+}
+
+.btns {
+    border: none;
+    position: relative;
+    width: 27px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.btns1 {
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    width: 27px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(0, 0, 0);
+    color: white;
+
+}
+
+.resspan {
+    border: none;
+    position: relative;
+    width: 118px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    background: rgb(215, 215, 215);
+    color: rgb(126, 126, 126);
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.ini::placeholder {
+    position: static;
+    width: 95px;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    color: rgb(126, 126, 126);
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.hrhr {
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    position: relative;
+    width: 119px;
+    height: 20px;
+}
+/* Секція вчених */
+.scientist-section {
+    margin: 40px auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scientist-title {
+    font-family: "Montserrat Alternates";
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #222;
+}
+
+.scientist-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.scientist-card {
+    width: 80px;
+    height: 80px;
+    background: rgb(215, 215, 215);
+    border-radius: 20px;
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scientist-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.scientist-label-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.scientist-label {
+    background: rgb(0, 0, 0);
+    color: white;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 20px;
+    padding: 6px 18px;
+    margin: 0;
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.15);
+    text-align: center;
+    max-width: 340px;
 }

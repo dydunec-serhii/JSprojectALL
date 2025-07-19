@@ -42,3 +42,111 @@ function updateMaxNumber() {
 [int1, int2, int3].forEach(input => {
     input.addEventListener('input', updateMaxNumber);
 });
+
+const input = document.querySelector('#iddd');
+const p = document.querySelector('#yu');
+input.addEventListener('input', () => {
+    const value = Number(input.value);
+    if (!isNaN(value) && input.value !== '') {
+        if (value % 4 === 0) {
+            p.textContent = `Ви народилися у високосний рік!`;
+            p.style.position = 'relative';
+            p.style.width = '212px';
+            p.style.height = '15px';
+            p.style.fontFamily = 'Montserrat Alternates';
+            p.style.fontSize = '12px';
+            p.style.fontWeight = '400';
+            p.style.lineHeight = '15px';
+            p.style.letterSpacing = '0%';
+            p.style.textAlign = 'right';
+            p.style.color = 'rgb(3, 153, 0)';
+        } else {
+            p.textContent = `Ви народилися не у високосний рік!`;
+            p.style.position = 'relative';
+            p.style.width = '230px';
+            p.style.height = '15px';
+            p.style.color = 'rgb(153, 0, 0)';
+            p.style.fontFamily = 'Montserrat Alternates';
+            p.style.fontSize = '12px';
+            p.style.fontWeight = '400';
+            p.style.lineHeight = '15px';
+            p.style.letterSpacing = '0%';
+            p.style.textAlign = 'right';
+        }
+    } else {
+        p.textContent = '';
+    }
+});
+
+const input2 = document.querySelector('#bmwx5');
+const p2 = document.querySelector('#ropopo');
+const guessButton = document.querySelector('#guessButton');
+guessButton.addEventListener('click', () => {
+    const userGuess = Number(input2.value);
+    if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+        p2.textContent = 'Будь ласка, введіть число від 1 до 100.';
+        p2.style.color = 'rgb(153, 0, 0)';
+        return;
+    }
+
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    console.log(`Загадане число: ${randomNumber}`); // logs for debugging
+    if (userGuess === randomNumber) {
+        p2.textContent = `Вітаю, Ви вгадали число ${randomNumber}`;
+        p2.style.color = 'rgb(3, 153, 0)';
+        p2.style.fontFamily = 'Montserrat Alternates';
+        p2.style.fontSize = '12px';
+        p2.style.fontWeight = '400';
+        p2.style.lineHeight = '15px';
+        p2.style.letterSpacing = '0%';
+        p2.style.textAlign = 'right';
+        p2.style.position = 'relative';
+        p2.style.width = '275px';
+        p2.style.height = '15px';
+    } else {
+        p2.textContent = `Ви програли, комп’ютер загадав ${randomNumber}`;
+        p2.style.color = 'rgb(153, 0, 0)';
+        p2.style.fontFamily = 'Montserrat Alternates';
+        p2.style.fontSize = '12px';
+        p2.style.fontWeight = '400';
+        p2.style.lineHeight = '15px';
+        p2.style.letterSpacing = '0%';
+        p2.style.textAlign = 'right';
+        p2.style.position = 'relative';
+        p2.style.width = '275px';
+        p2.style.height = '15px';
+    }
+});
+
+
+
+
+
+const num1 = document.getElementById('num1');
+const num2 = document.getElementById('num2');
+const result = document.getElementById('calcresult');
+
+function calculate(operator) {
+    const a = parseFloat(num1.value);
+    const b = parseFloat(num2.value);
+    let res = '';
+    if (!isNaN(a) && !isNaN(b)) {
+        switch (operator) {
+            case '+':
+                res = a + b;
+                break;
+            case '-':
+                res = a - b;
+                break;
+            case '*':
+                res = a * b;
+                break;
+            case '/':
+                res = a / b;
+                break;
+        }
+    } else {
+        res = 'Введіть два числа!';
+    }
+    result.textContent = res;
+}
