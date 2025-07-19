@@ -90,7 +90,7 @@ guessButton.addEventListener('click', () => {
     }
 
     const randomNumber = Math.floor(Math.random() * 100) + 1;
-    console.log(`Загадане число: ${randomNumber}`); // logs for debugging
+    console.log(`Загадане число: ${randomNumber}`);
     if (userGuess === randomNumber) {
         p2.textContent = `Вітаю, Ви вгадали число ${randomNumber}`;
         p2.style.color = 'rgb(3, 153, 0)';
