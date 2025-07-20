@@ -30,9 +30,9 @@ function jump() {
         dino.classList.remove('jump')
     }, 300)
 }
-var isAlive = setInterval(function () {
-    var dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
-    var cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
+let isAlive = setInterval(function () {
+    let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+    let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
     // if (cactusLeft < 50 && cactusLeft < 0 && dinoTop >=140) {
     //     alert('game over(');
     // }
@@ -159,36 +159,6 @@ resetBtn.addEventListener('click', () => {
     compScore = 0;
     userScoreElem.textContent = `Ви - 0`;
     compScoreElem.textContent = `Комп’ютер - 0`;
-    userScoreElem.style.color = 'black';
-    compScoreElem.style.color = 'black';
-    resultText.style.color = 'black';
-    resultText.style.fontFamily = 'Montserrat Alternates';
-    resultText.style.fontSize = '12px';
-    resultText.style.fontWeight = '400';
-    resultText.style.lineHeight = '15px';
-    resultText.style.letterSpacing = '0%';
-    resultText.style.textAlign = 'left';
-    resultText.style.position = 'relative';
-    resultText.style.width = '169px';
-    resultText.style.height = '15px';
-    compScoreElem.style.fontFamily = 'Montserrat Alternates';
-    userScoreElem.style.fontFamily = 'Montserrat Alternates';
-    compScoreElem.style.fontSize = '12px';
-    userScoreElem.style.fontSize = '12px';
-    compScoreElem.style.fontWeight = '400';
-    userScoreElem.style.fontWeight = '400';
-    compScoreElem.style.lineHeight = '15px';
-    userScoreElem.style.lineHeight = '15px';
-    compScoreElem.style.letterSpacing = '0%';
-    userScoreElem.style.letterSpacing = '0%';
-    compScoreElem.style.textAlign = 'left';
-    userScoreElem.style.textAlign = 'left';
-    compScoreElem.style.position = 'relative';
-    userScoreElem.style.position = 'relative';
-    compScoreElem.style.width = '169px';
-    userScoreElem.style.width = '169px';
-    compScoreElem.style.height = '15px';
-    userScoreElem.style.height = '15px';
     resultText.textContent = '';
 });
 
@@ -219,38 +189,41 @@ function determineWinner(user, comp) {
 //     textContent.style.color = 'black'
 // })
 const openModalBtn = document.getElementById('openModalBtn');
-const modal = document.getElementById('modal');
+const modal = document.querySelector('#modal');
 const closeModalBtn = document.getElementById('closeModalBtn');
+const ffff = document.getElementById("ffff");
 
 // Відкрити модальне вікно
-openModalBtn.addEventListener('click', () => {
-  modal.style.display = 'block';
-});
+// openModalBtn.addEventListener('click', () => {
+modal.style.display = 'block';
+// });
 
 // Закрити вікно при натисканні на хрестик
 closeModalBtn.addEventListener('click', () => {
-  modal.style.display = 'none';
+    modal.style.display = 'none';
+    ffff.textContent = 'Вітаемо, Userrmm!';
 });
 
 // Закрити вікно при кліку поза вікном
 window.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
 });
 const saveBtn = document.getElementById("saveBtn");
 const usernameInput = document.getElementById("username");
 const welcomeModal = document.getElementById("welcomeModal");
 const thankYouModal = document.getElementById("thankYouModal");
-
-saveBtn.addEventListener("click", () => {
-  const name = usernameInput.value.trim();
-  
-  if (name !== "") {
-    welcomeModal.classList.add("hidden");
-    thankYouModal.classList.remove("hidden");
-  } else {
-    alert("Будь ласка, введіть ім’я!");
-  }
+let nana = usernameInput.value;
+saveBtn.addEventListener("click", (event) => {
+    if (nana === "userrmm") {
+        welcomeModal.classList.add("hidden");
+        thankYouModal.classList.remove("hidden");
+        document.querySelector('.modal2-overlay').style.display = 'none';
+        ffff.textContent = `Вітаємо, userrmm!`;
+        modal.style.display = 'none';
+    } else {
+        alert("Будь ласка, введіть ім’я!");
+    }
 });
 
