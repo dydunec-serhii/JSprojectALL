@@ -34,22 +34,8 @@
                             <li>Ознайомчий</li>
                         </ul>
                     </details>
-                    <details>
-                        <summary>Наша команда</summary>
-                        <ul>
-                            <li>Числовий</li>
-                            <li>Ігровий</li>
-                            <li>Ознайомчий</li>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>Контакти</summary>
-                        <ul>
-                            <li>Числовий</li>
-                            <li>Ігровий</li>
-                            <li>Ознайомчий</li>
-                        </ul>
-                    </details>
+                        <p>Наша команда</p>
+                        <p>Контакти</p>
                 </div>
                 <div class="div-slider-user">
                     <label class="theme-switch">
@@ -59,7 +45,7 @@
                             <span class="icon moon">🌙</span>
                         </span>
                     </label>
-                    <div>Вітаємо, User!</div>
+                    <div id="ffff">Вітаємо, User!</div>
                 </div>
             </section>
 
@@ -109,9 +95,9 @@
                     <img class="choise" src="./svg-serhiy/nozi.svg" alt="nozi" data-choice="scissors">
                     <img class="choise" src="./svg-serhiy/papir.svg" alt="papir" data-choice="paper">
                     <ul class="ul-all-rahynok-computer-sec">
-                        <li>Рахунок:</li>
-                        <li id="compScore">Комп’ютер - 0</li>
-                        <li id="userScore"> Ви - 0</li>
+                        <li class="ls">Рахунок:</li>
+                        <li class="ls" id="compScore">Комп’ютер - 0</li>
+                        <li class="ls" id="userScore"> Ви - 0</li>
                     </ul>
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center;">
@@ -275,42 +261,43 @@
                         <div class="logo-here-span"><span>Coding</span><br><span class="sacramento">Magic</span></div>
                     </div>
                     <ul class="ul-tel-email">
-                        <li><a class="a-colo" href="#">Тел: +38 (123) 456 78 90</a></li>
-                        <li><a class="a-colo" href="#">E-Mail: codingmagic@gmail.com</a></li>
-                        <li><a class="a-colo" href="#">Facebook: CodingMagic</a></li>
-                        <li><a class="a-colo" href="#">Twitter: CodingMagic</a></li>
-                        <li><a class="a-colo" href="#">Instagram: CodingMagic</a></li>
+                        <li><a class="a-colo href" href="#">Тел: +38 (123) 456 78 90</a></li>
+                        <li><a class="a-colo href" href="#">E-Mail: codingmagic@gmail.com</a></li>
+                        <li><a class="a-colo href" href="#">Facebook: CodingMagic</a></li>
+                        <li><a class="a-colo href" href="#">Twitter: CodingMagic</a></li>
+                        <li><a class="a-colo href" href="#">Instagram: CodingMagic</a></li>
                     </ul>
                 </div>
                 <div class="disp-div-foot">
                     <!-- <label for="gmail" name="gmail"></label> -->
                     <input type="text" placeholder="Ваша ел. адреса..." class="input-foot-gmail">
-                    <button class="butt-foot" id="openModalBtn" type="button">Підписатись</button>
+                    <button class="butt-foot" id="openModalBtn" type="submit">Підписатись</button>
                     <div>
-                        <div id="modal" class="modal">
-                            <div class="modal-content">
-                                <span id="closeModalBtn" class="close">&times;</span>
-                                <p>Привіт! <br>
-                                    Ви потрапили на сайт інтерактивних ігор та завдань <br>
-                                    Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br>
-                                    Бажаємо Вам гарно провести час!</p>
-                                <p>Введіть своє ім’я:</p>
-                                <img class="first-img-foot" src="./foot-ser-png/first.png" alt="first" width="30px"
-                                    height="30px">
-                                <img class="sec-img-foot" src="./foot-ser-png/second.png" alt="sec" width="30px"
-                                    height="30px">
-                                <input type="text" name="name" id="username" placeholder="Ваше ім’я..."
-                                    class="input-foot-gmail">
-                                <button class="butt-foot" id="saveBtn">Зберегти</button>
-                                <div id="thankYouModal" class="modal hidden">
-                                    <p>Дякуємо за введення імені! ❤️</p>
+                        <div class="modal2-overlay">
+                            <div id="modal" class="modal">
+                                <div class="modal-content">
+                                    <span id="closeModalBtn" class="close">&times;</span>
+                                    <p>Привіт! <br>
+                                        Ви потрапили на сайт інтерактивних ігор та завдань <br>
+                                        Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br>
+                                        Бажаємо Вам гарно провести час!</p>
+                                    <p>Введіть своє ім’я:</p>
+                                    <img class="first-img-foot" src="./foot-ser-png/first.png" alt="first" width="30px"
+                                        height="30px">
+                                    <img class="sec-img-foot" src="./foot-ser-png/second.png" alt="sec" width="30px"
+                                        height="30px">
+                                    <input type="text" name="name" id="username" placeholder="Ваше ім’я..."
+                                        class="input-foot-gmail">
+                                    <button class="butt-foot" id="saveBtn">Зберегти</button>
+                                    <div id="thankYouModal" class="modal hidden">
+                                        <p>Дякуємо за введення імені! ❤️</p>
+                                    </div>
+                                    <img class="third-img-foot" src="./foot-ser-png/third.png" alt="third" width="30px"
+                                        height="30px">
+                                    <img class="fourth-img-foot" src="./foot-ser-png/fourth.png" alt="fourth"
+                                        width="30px" height="30px">
                                 </div>
-                                <img class="third-img-foot" src="./foot-ser-png/third.png" alt="third" width="30px"
-                                    height="30px">
-                                <img class="fourth-img-foot" src="./foot-ser-png/fourth.png" alt="fourth" width="30px"
-                                    height="30px">
                             </div>
-
                         </div>
                     </div>
                 </div>

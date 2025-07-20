@@ -320,13 +320,27 @@ body.dark-theme {
 }
 
 .modal2 {
-    /* стилізація твого модального вікна */
     background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px gray;
+    box-shadow: none;
+    /* без тіні на самій модалці */
     text-align: center;
+    z-index: 1000;
 }
+
+/* .modal2-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(128, 128, 128, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+} */
 
 .hidden {
     display: none;
@@ -469,6 +483,10 @@ h2 {
         top: 150px;
     }
 
+    10% {
+        top: 140px;
+    }
+
     30% {
         top: 130px;
     }
@@ -484,6 +502,7 @@ h2 {
     60% {
         top: 90px;
     }
+
     70% {
         top: 100px;
     }
@@ -554,6 +573,30 @@ h2 {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.a-colo {
+    position: relative;
+    /* width: 206.86px;
+    height: 100px; */
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.ls {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 170%;
     letter-spacing: 0%;
     text-align: left;
 }

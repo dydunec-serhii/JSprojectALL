@@ -149,4 +149,5 @@ function calculate(operator) {
         res = 'Введіть два числа!';
     }
     result.textContent = res;
+    result.style.color = 'black';
 }
